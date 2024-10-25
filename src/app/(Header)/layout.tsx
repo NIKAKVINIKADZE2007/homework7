@@ -1,10 +1,14 @@
 import Main from '@/components/main';
-import React from 'react';
 
-const Layout = () => {
+const Layout = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   return (
     <div>
       <Main />
+      {children}
     </div>
   );
 };

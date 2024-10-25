@@ -34,11 +34,11 @@ const Header = () => {
         </ul>
 
         <div className='flex items-center w-[201px]'>
-          <Link href='/Sign-In' className='text-[#8987A1] opacity-80'>
+          <Link href='/sign-in' className='text-[#8987A1] opacity-80'>
             Sign in
           </Link>
           <Link
-            href='/Log-in'
+            href='/log-in'
             className='ml-[19px] block max-w-[132px] w-full h-[48px] bg-[#4E47FF] text-center pt-[12px] rounded-[10px]  text-white font-bold '
           >
             Log in
