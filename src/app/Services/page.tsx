@@ -1,15 +1,10 @@
 import Main from '@/components/main';
 import React from 'react';
 
-const Services = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
+const Services = () => {
   return (
     <>
       <Main />
-      {children}
     </>
   );
 };
