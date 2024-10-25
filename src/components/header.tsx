@@ -2,6 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import logo from '../assets/index';
+import { log } from 'console';
 const Header = () => {
   const pathname = usePathname();
 
@@ -15,6 +18,10 @@ const Header = () => {
   return (
     <header className='w-full'>
       <div className='max-w-[1216px] mx-auto w-full flex items-center justify-between'>
+        <Link href={'/'}>
+          <Image alt='logo' src={logo} />
+        </Link>
+
         <ul className='max-w-[499px] h-[68px] bg-white pl-[56px] flex items-center w-full justify-between pr-[42px]'>
           {Links.map((link) => {
             const isActive = pathname === link.href;
