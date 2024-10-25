@@ -1,10 +1,6 @@
 import Main from '@/components/main';
 
-const Layout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <Main />
